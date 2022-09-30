@@ -25,16 +25,16 @@ function Navbar(props) {
           {props.showtitle}
         </h1>
       </div>
-      <div className="w-full max-w-4xl">
-        <input
-          placeholder="Search"
-          onClick={() => setSearch(true)}
-          onMouseLeave={() => setSearch(false)}
-          className={` cursor-pointer ${
-            search ? "bg-white shadow-md" : "bg-gray-200/80"
-          }  border rounded-lg pl-8 pr-4  p-3 max-w-3xl w-full `}
-        />
-      </div>
+//       <div className="w-full max-w-4xl">
+//         <input
+//           placeholder="Search"
+//           onClick={() => setSearch(true)}
+//           onMouseLeave={() => setSearch(false)}
+//           className={` cursor-pointer ${
+//             search ? "bg-white shadow-md" : "bg-gray-200/80"
+//           }  border rounded-lg pl-8 pr-4  p-3 max-w-3xl w-full `}
+//         />
+//       </div>
       <div className=" flex items-center space-x-10">
         <div className=" flex items-center text-gray-700  text-2xl space-x-4 ">
           <ReplayIcon fontSize="inherit" />
@@ -45,18 +45,18 @@ function Navbar(props) {
           Hello{" "}
           <span className=" font-bold text-lg">{props.user?.displayName}</span>
         </h1>
-        <div className=" flex items-center space-x-2">
-          <div className=" hover:bg-gray-200 p-2 text-gray-700  rounded-full cursor-pointer">
-            <AppsIcon />
-          </div>
+//         <div className=" flex items-center space-x-2">
+//           <div className=" hover:bg-gray-200 p-2 text-gray-700  rounded-full cursor-pointer">
+//             <AppsIcon />
+//           </div>
 
-          <button onClick={props.SO}>
-            <img
-              className=" p-1 h-10 bg-gray-200 rounded-full"
-              src={props.user?.photoURL}
-            />
-          </button>
-        </div>
+//           <button onClick={props.SO}>
+//             <img
+//               className=" p-1 h-10 bg-gray-200 rounded-full"
+//               src={props.user?.photoURL}
+//             />
+//           </button>
+//         </div>
       </div>
     </div>
   );
