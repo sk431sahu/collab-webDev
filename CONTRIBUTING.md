@@ -2,3 +2,4 @@
 2. Commit your code file.
 3. Create a pull request.
 4. Done. We will review it soon... Enjoy!
+5. Don't forget to star the repo!
